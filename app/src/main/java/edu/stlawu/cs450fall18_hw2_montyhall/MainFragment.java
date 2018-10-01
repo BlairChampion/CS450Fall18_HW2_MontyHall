@@ -113,6 +113,14 @@ public class MainFragment extends Fragment {
                                          public void onClick(View view) {
                                              soundPool.play(clickSound, 1f,
                                                      1f, 1, 0, 1f);
+                                             SharedPreferences.Editor pref_ed =
+                                                     getActivity().getSharedPreferences(
+                                                             PREF_NAME, Context.MODE_PRIVATE).edit();
+                                             pref_ed.putBoolean(NEW_CLICKED, true).apply();
+
+                                             Intent intent = new Intent(
+                                                     getActivity(), GameActivity.class);
+                                             getActivity().startActivity(intent);
                                          }
                                      }
 
