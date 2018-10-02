@@ -29,7 +29,15 @@
                 android:layout_row="1"
                 android:text="@string/loss"/>
 
-            <!-- finish grid layout -->
+            <TextView
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="0"/>
+
+            <TextView
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="0"/>
 
         </GridLayout>
 

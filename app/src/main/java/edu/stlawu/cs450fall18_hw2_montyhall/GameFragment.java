@@ -29,6 +29,8 @@ public class GameFragment extends Fragment {
     private int choicecounter = 0;
     private int selecteddoor = 0;
     private int closeddoor = 0;
+    private int win_count = 0;
+    private int loss_count = 0;
 
     public GameFragment() {
         // Required empty public constructor
@@ -113,6 +115,7 @@ public class GameFragment extends Fragment {
 
                         if (doornumber == 0) {
                             door1.setImageLevel(2);
+                            win_count++;
 
                             soundPool.play(carSound, 1f,
                                     1f, 1, 0, 1f);
@@ -127,6 +130,7 @@ public class GameFragment extends Fragment {
 
                         } else {
                             door1.setImageLevel(3);
+                            loss_count++;
 
                             soundPool.play(goatSound, 1f,
                                     1f, 1, 0, 1f);
@@ -195,6 +199,7 @@ public class GameFragment extends Fragment {
 
                         if (doornumber == 1) {
                             door2.setImageLevel(2);
+                            win_count++;
 
                             soundPool.play(carSound, 1f,
                                     1f, 1, 0, 1f);
@@ -209,6 +214,7 @@ public class GameFragment extends Fragment {
 
                         } else {
                             door2.setImageLevel(3);
+                            loss_count++;
 
                             soundPool.play(goatSound, 1f,
                                     1f, 1, 0, 1f);
@@ -276,6 +282,7 @@ public class GameFragment extends Fragment {
 
                         if (doornumber == 2) {
                             door3.setImageLevel(2);
+                            win_count++;
 
                             soundPool.play(carSound, 1f,
                                     1f, 1, 0, 1f);
@@ -290,6 +297,7 @@ public class GameFragment extends Fragment {
 
                         } else {
                             door3.setImageLevel(3);
+                            loss_count++;
 
                             soundPool.play(goatSound, 1f,
                                     1f, 1, 0, 1f);
