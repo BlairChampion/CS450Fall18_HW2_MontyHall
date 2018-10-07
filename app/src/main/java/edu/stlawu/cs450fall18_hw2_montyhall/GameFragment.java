@@ -75,39 +75,7 @@ public class GameFragment extends Fragment {
                 soundPool.play(clickSound, 1f,
                         1f, 1, 0, 1f);
 
-                if (choicecounter == 0) {
-                    door1.setImageLevel(1);
-                    selecteddoor = 1;
-
-                    if (doornumber == 0) {
-                        if (decider == 0) {
-                            door2.setImageLevel(3);
-                            closeddoor = 3;
-                        } else {
-                            door3.setImageLevel(3);
-                            closeddoor = 2;
-                        }
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-
-                    if (doornumber == 1) {
-                        door3.setImageLevel(3);
-                        closeddoor = 2;
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-
-                    if (doornumber == 2) {
-                        door2.setImageLevel(3);
-                        closeddoor = 3;
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-                    choicecounter++;
-                }
-
-                if (choicecounter == 2) {
+                if (choicecounter == 1) {
                     if (selecteddoor == 1 || closeddoor == 1) {
                         door1.setImageLevel(4);
                         door1.setImageLevel(5);
@@ -150,6 +118,38 @@ public class GameFragment extends Fragment {
                     }
                     choicecounter--;
                 }
+
+                if (choicecounter == 0) {
+                    door1.setImageLevel(1);
+                    selecteddoor = 1;
+
+                    if (doornumber == 0) {
+                        if (decider == 0) {
+                            door2.setImageLevel(3);
+                            closeddoor = 3;
+                        } else {
+                            door3.setImageLevel(3);
+                            closeddoor = 2;
+                        }
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+
+                    if (doornumber == 1) {
+                        door3.setImageLevel(3);
+                        closeddoor = 2;
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+
+                    if (doornumber == 2) {
+                        door2.setImageLevel(3);
+                        closeddoor = 3;
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+                    choicecounter++;
+                }
             }
         });
 
@@ -158,38 +158,6 @@ public class GameFragment extends Fragment {
             public void onClick(View view) {
                 soundPool.play(clickSound, 1f,
                         1f, 1, 0, 1f);
-
-                if (choicecounter == 0) {
-                    door2.setImageLevel(1);
-                    selecteddoor = 2;
-
-                    if (doornumber == 1) {
-                        if (decider == 0) {
-                            door1.setImageLevel(3);
-                            closeddoor = 3;
-                        } else {
-                            door3.setImageLevel(3);
-                            closeddoor = 1;
-                        }
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-
-                    if (doornumber == 0) {
-                        door3.setImageLevel(3);
-                        closeddoor = 1;
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-
-                    if (doornumber == 2) {
-                        door1.setImageLevel(3);
-                        closeddoor = 3;
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-                    choicecounter++;
-                }
 
                 if (choicecounter == 1) {
                     if (selecteddoor == 2 || closeddoor == 2) {
@@ -234,6 +202,38 @@ public class GameFragment extends Fragment {
                     }
                     choicecounter--;
                 }
+
+                if (choicecounter == 0) {
+                    door2.setImageLevel(1);
+                    selecteddoor = 2;
+
+                    if (doornumber == 1) {
+                        if (decider == 0) {
+                            door1.setImageLevel(3);
+                            closeddoor = 3;
+                        } else {
+                            door3.setImageLevel(3);
+                            closeddoor = 1;
+                        }
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+
+                    if (doornumber == 0) {
+                        door3.setImageLevel(3);
+                        closeddoor = 1;
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+
+                    if (doornumber == 2) {
+                        door1.setImageLevel(3);
+                        closeddoor = 3;
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+                    choicecounter++;
+                }
             }
         });
 
@@ -242,37 +242,6 @@ public class GameFragment extends Fragment {
             public void onClick(View view) {
                 soundPool.play(clickSound, 1f,
                         1f, 1, 0, 1f);
-
-                if (choicecounter == 1) {
-                    door3.setImageLevel(1);
-                    selecteddoor = 3;
-
-                    if (doornumber == 2) {
-                        if (decider == 0) {
-                            door1.setImageLevel(3);
-                            closeddoor = 2;
-                        } else {
-                            door2.setImageLevel(3);
-                            closeddoor = 1;
-                        }
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-
-                    if (doornumber == 1) {
-                        door1.setImageLevel(3);
-                        closeddoor = 2;
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-
-                    if (doornumber == 0) {
-                        door2.setImageLevel(3);
-                        soundPool.play(goatSound, 1f,
-                                1f, 1, 0, 1f);
-                    }
-                    choicecounter++;
-                }
 
                 if (choicecounter == 1) {
                     if (selecteddoor == 3 || closeddoor == 3) {
@@ -316,6 +285,37 @@ public class GameFragment extends Fragment {
                         }
                     }
                     choicecounter--;
+                }
+
+                if (choicecounter == 0) {
+                    door3.setImageLevel(1);
+                    selecteddoor = 3;
+
+                    if (doornumber == 2) {
+                        if (decider == 0) {
+                            door1.setImageLevel(3);
+                            closeddoor = 2;
+                        } else {
+                            door2.setImageLevel(3);
+                            closeddoor = 1;
+                        }
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+
+                    if (doornumber == 1) {
+                        door1.setImageLevel(3);
+                        closeddoor = 2;
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+
+                    if (doornumber == 0) {
+                        door2.setImageLevel(3);
+                        soundPool.play(goatSound, 1f,
+                                1f, 1, 0, 1f);
+                    }
+                    choicecounter++;
                 }
             }
         });
